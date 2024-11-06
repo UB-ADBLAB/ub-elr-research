@@ -14,7 +14,7 @@ KEYWORDS=user interrupts; x86-64; hybrid tranasctional/analytical processing; da
 MENTORS=<a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
 
 DESC_START # A one or two sentence description of the project + logistics information
-<p> It is possible to perform IPC (inter-process communication) at micro-second
+<p> It is now possible to perform IPC (inter-process communication) at micro-second
 level latency with a new feature in x86-64 ISA: user interrupt. In this
 project, we would like to design and build intelligent transaction schedluing
 subsystems for database systems in Hybrid Transactional/Analytical Processing
