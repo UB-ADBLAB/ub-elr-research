@@ -81,4 +81,3 @@ for i in contents/prjs/*; do
         -e "s/<!-- @SEMESTER@ -->/${SEMESTER}/" \
         templates/prj.html > out/prj_${S}.html
 done
-
