@@ -30,12 +30,14 @@ for i in contents/prjs/*; do
             SEMESTER="$S"
     esac
     rm -f "out.tmp/${S}_prjids.txt"
+    rm -f "out.tmp/${S}_prj_list.txt"
     for j in contents/prjs/$S/*; do
         ID="$(grep '^ID=' $j | head -n 1 | sed 's/^ID=\([0-9]*\).*$/\1/')"
         TITLE="$(grep '^TITLE=' $j | head -n 1 | sed 's/^TITLE=[ \t]*//' | sed 's/\//\\\//g')"
         KEYWORDS="$(grep '^KEYWORDS=' $j | head -n 1 | sed 's/^KEYWORDS=[ \t]*//' | sed 's/\//\\\//g')"
         MENTORS="$(grep '^MENTORS=' $j | head -n 1 | sed 's/^MENTORS=[ \t]*//' | sed 's/\//\\\//g')"
         echo "$ID" >> out.tmp/${S}_prjids.txt
+        echo "$ID - $TITLE (mentored by $MENTORS)" >> out.tmp/${S}.prj_list.txt
         
         DESC="$(sed -n '
             /^DESC_START/,/^DESC_END/ {
