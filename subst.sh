@@ -21,6 +21,14 @@ mkdir -p out.tmp
 
 for i in contents/prjs/*; do
     S="`basename $i`"
+    case "$S" in
+        sp*)
+            SEMESTER="Spring 20`echo "$S" | sed 's/^sp//'`";;
+        fa*)
+            SEMESTER="Fall 20`echo "$S" | sed 's/^fa//'`";;
+        *)
+            SEMESTER="$S"
+    esac
     rm -f "out.tmp/${S}_prjids.txt"
     for j in contents/prjs/$S/*; do
         ID="$(grep '^ID=' $j | head -n 1 | sed 's/^ID=\([0-9]*\).*$/\1/')"
@@ -61,15 +69,14 @@ for i in contents/prjs/*; do
             ../templates/prj_item.html > "${S}_${ID}.html"
         cd ..
     done
-    cd out.tmp
-    cat `sort -n "${S}_prjids.txt" | sed -e "s/^/${S}_/" -e "s/$/.html/"` \
-        > "${S}_prj_cat.html"
+    cat `sort -n "out.tmp/${S}_prjids.txt" | sed -e "s/^/out.tmp\/${S}_/" -e "s/$/.html/"` \
+        > "out.tmp/${S}_prj_cat.html"
     sed -e "$REGULAR_SUBST" \
         -e "/<!-- @PRJS@ -->/{
-            r ${S}_prj_cat.html
+            r out.tmp/${S}_prj_cat.html
             d
         }" \
-        ../templates/prj.html > ../out/prj_${S}.html
-    cd ..
+        -e "s/<!-- @SEMESTER@ -->/${SEMESTER}/" \
+        templates/prj.html > out/prj_${S}.html
 done
 

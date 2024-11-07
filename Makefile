@@ -2,6 +2,7 @@
 
 all:
 	bash subst.sh
+	bash deploy.sh
 
 clean:
 	rm -rf out

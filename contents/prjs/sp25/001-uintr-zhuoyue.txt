@@ -14,13 +14,13 @@ KEYWORDS=user interrupts; x86-64; hybrid tranasctional/analytical processing; da
 MENTORS=<a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
 
 DESC_START # A one or two sentence description of the project + logistics information
-<p> It is now possible to perform IPC (inter-process communication) at micro-second
-level latency with a new feature in x86-64 ISA: user interrupt. In this
-project, we would like to design and build intelligent transaction schedluing
-subsystems for database systems in Hybrid Transactional/Analytical Processing
-use cases. The immediate goal of this semester, is to design a character device
-driver for enabling user interrupt features for userspace programs, and demonstrate
-its usability and performance through integration in our existing research prototype system.
+<p> In this project, we would like to design and build intelligent transaction
+schedluing subsystems for database systems in Hybrid Transactional/Analytical
+Processing use cases, leveraging a new hardware feature, user interrupts in
+x86-64 ISA. The immediate goal of this semester is to design a character
+device driver for enabling user interrupt features for userspace programs, and
+demonstrate its usability and performance through integration in our existing
+research prototype system.
 DESC_END
 DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
 <p>
