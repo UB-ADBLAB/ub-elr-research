@@ -9,7 +9,7 @@
 # See below for example.
 
 ID=001
-TITLE=Fast Transaction Scheduling via Userspace Interrutps in Database Systems for HTAP
+TITLE=Transaction Scheduling via User Interrupts for HTAP Database Systems
 KEYWORDS=user interrupts; x86-64; hybrid tranasctional/analytical processing; database
 MENTORS=<a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
 
