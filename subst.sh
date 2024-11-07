@@ -37,7 +37,7 @@ for i in contents/prjs/*; do
         KEYWORDS="$(grep '^KEYWORDS=' $j | head -n 1 | sed 's/^KEYWORDS=[ \t]*//' | sed 's/\//\\\//g')"
         MENTORS="$(grep '^MENTORS=' $j | head -n 1 | sed 's/^MENTORS=[ \t]*//' | sed 's/\//\\\//g')"
         echo "$ID" >> out.tmp/${S}_prjids.txt
-        echo "$ID - $TITLE (mentored by $MENTORS)" >> out.tmp/${S}.prj_list.txt
+        echo "$ID - $TITLE (mentored by $MENTORS)" | sed 's/\\//g' | sed 's/<[^<>]*>//g' >> out.tmp/${S}_prj_list.txt
         
         DESC="$(sed -n '
             /^DESC_START/,/^DESC_END/ {
