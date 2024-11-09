@@ -1,0 +1,56 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=005
+TITLE=MobiPerf: A Truly Mobile Blood Perfusion System for Diabetic Foot Care
+KEYWORDS=hyperspectral reconstruction; diabetic foot ulcers; deep learning
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> 
+MobiPerf is a novel system which leverages hyperspectral reconstruction (HSR)
+for diabetic foot wound care on mobile devices thrugh systematic inprovments
+to the whole HSR sensing scheme. Forgoing the typical way of doing HSR in
+smart health we instead use modern deep learning HSR technology, which we pair
+with a new calibration-free skin composition estimation method and a new and
+robust oxygenation feature. 
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-005-mobiperf" src="imgs/sp25-005.png"
+    style="margin: 0px 0px 0px 160px; width: 640px; height: 360px">
+<p>
+In the United States around 1.6 million individuals deal with diebetic foot
+ulcers (DFU). DFU is a lethal condition with around a 20% 5-year mortality
+rate in addition to significantly affecting the mobilibity and quality of life
+of those who have it.  DFU is highly related to the wound blood perfusion
+which is how sucessfully oxygenated blood is delivered to all parts of the
+wound's tissue. Given the challenges associated with getting around with a DFU
+there has been a recent focus on developing tools to chartarize ulcers using
+unmodified mobile devices. Existing methods for mobile wound analysis
+typically use surrogate markers such as size and discoloration which they
+track over time. In mobile health there is an emerging set of applications for
+a technology called hyperspectral reconstruction which enables smartphone
+cameras to be used to image the composition of various tissues, this has been
+used before to image blood perfusion as well. 
+
+MobiPerf is a novel system which leverages hyperspectral reconstruction (HSR)
+for diabetic foot wound care on mobile devices thrugh systematic inprovments
+to the whole HSR sensing scheme. Forgoing the typical way of doing HSR in
+smart health we instead use modern deep learning HSR technology, which we pair
+with a new calibration-free skin composition estimation method and a new and
+robust oxygenation feature. Overall yielding a system that can reasonably be
+deployed and used on mobile devices without the burdens typically associated
+with hospital based devices.  We also use our system to obtain remote PPG
+signals which supplements the perfusion information with highly related
+cardiac information. We test our system against a true hyperspectral camera, a
+dataset of videos intended for camera PPG estimation, and a public dataset of
+diabetic foot ulcer images. 
+DESC_MORE_DETAILS_END

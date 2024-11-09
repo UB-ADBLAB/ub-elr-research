@@ -1,0 +1,50 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=003
+TITLE=GloVoAD: A Global Voice Dataset Empowering Language-Agnostic Models for ADRD Detection through Acoustic Feature Optimization
+KEYWORDS=ADRD detection; speech recognition; acoustic feature engineering
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> In this study, we introduce the GloVoAD dataset, a meticulously curated,
+multilingual, and multinational dataset that includes speech data from
+individuals representing a range of cognitive statuses and demographics. With
+samples drawn from varied age groups, languages, and tasks, GloVoAD aims to
+enhance the generalizability of ADRD detection models to global populations. 
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-003-glovoad" src="imgs/sp25-003.jpg"
+    style="margin: 0px 0px 0px 160px; width: 640px; height: 360px">
+<p>
+Alzheimer's Disease and Related Dementias (ADRD) affect an estimated 50
+million people worldwide, a number projected to triple by 2050 due to global
+aging trends. Early detection is crucial for effective management, yet current
+diagnostic approaches are often limited in scalability and inclusivity,
+especially across diverse linguistic and cultural contexts. In this study, we
+introduce the GloVoAD dataset, a meticulously curated, multilingual, and
+multinational dataset that includes speech data from individuals representing
+a range of cognitive statuses and demographics. With samples drawn from varied
+age groups, languages, and tasks, GloVoAD aims to enhance the generalizability
+of ADRD detection models to global populations. We developed a
+language-agnostic model, relying exclusively on acoustic features that
+circumvent the need for linguistic content analysis. This approach ensures
+applicability across diverse linguistic backgrounds, making it suitable for
+multilingual settings without requiring language-specific customization.
+Finally, we establish a robust baseline through the selection of optimal
+acoustic features and feature sets, combined with an exploration of ideal
+audio segment lengths, to maximize model efficiency and detection accuracy.
+This methodological refinement enhances both dataset utility and computational
+efficiency, supporting scalable diagnostic applications, particularly within
+telehealth frameworks. Collectively, our work with GloVoAD marks a significant
+step toward democratizing ADRD diagnostics, providing accessible,
+language-independent tools for diverse and underserved communities worldwide.
+DESC_MORE_DETAILS_END

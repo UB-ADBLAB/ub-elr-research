@@ -1,0 +1,66 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=008
+TITLE=MindVoice: BCI Speech Enhancement for Accessible Communication
+KEYWORDS=speech recognition; electroencephalography
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> This project tackles the challenge of
+decoding speech non-invasively through wearable technology powered by embedded
+AI, utilizing a two-pronged algorithmic innovation and hardware development
+approach, in an Automatic Speech Recognition (ASR) system for users with
+speech impairement.
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-008-oralscan" src="imgs/sp25-008.png"
+    style="margin: 0px 0px 0px 160px; width: 640px; height: 360px">
+<p>
+Automatic Speech Recognition (ASR) systems, though generally effective for
+typical speakers, struggle to recognize speech from individuals with
+impairments. People with speech impairments often have atypical articulation,
+irregular pacing, and other non-standard speech characteristics, which ASR
+models, trained on precise and conventional speech data, fail to interpret
+accurately. As a result, traditional ASR systems exhibit high error rates for
+these users, creating a significant barrier to accessible and reliable
+communication technology. Integrating brain activity data, primarily through
+electroencephalography (EEG), with speech input presents a promising solution
+by providing direct insights into the neural processes underlying speech
+production. EEG captures neural signals associated with speech intentions,
+even when speech is impaired. By combining EEG data with audio input, ASR
+systems gain a more profound, multimodal understanding of the speaker’s
+intended words. This results in improved decoding accuracy and a more
+inclusive recognition model that adapts to various speech patterns, including
+those associated with impairments. This project tackles the challenge of
+decoding speech non-invasively through wearable technology powered by embedded
+AI, utilizing a two-pronged algorithmic innovation and hardware development
+approach. On the algorithmic side, we have developed a multimodal model that
+integrates distorted audio with EEG data, demonstrating that EEG significantly
+enhances word classification accuracy. Building on this foundation, we are
+advancing a contrastive learning model designed to pair EEG and speech signals
+during training, allowing for accurate speech decoding using EEG alone during
+inference. To support this model’s effectiveness, we have designed a unique
+data collection protocol encompassing a wide range of English phonemes and
+phrases, ensuring a diverse, representative dataset that strengthens the
+model’s performance. Simultaneously, we are creating a compact, powerful BCI
+device capable of recording EEG and speech signals simultaneously while
+embedding an AI model for real-time brain-to-speech conversion. This device,
+designed to be smaller than two quarters in size, supports non-invasive,
+real-time decoding in an accessible, wearable format. Alongside this hardware,
+we are also developing a user interface (UI) to create a complete end-to-end
+system for data collection, real-time processing, and visualization of
+results. This UI enables users to interact seamlessly with the hardware and
+model, allowing efficient monitoring and evaluation of the speech decoding
+process. This work paves the way for a more inclusive future in communication
+technology, where speech decoding is accessible, scalable, and adaptive to
+diverse needs.
+DESC_MORE_DETAILS_END

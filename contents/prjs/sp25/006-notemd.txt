@@ -1,0 +1,54 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=006
+TITLE=NoteMD: Automated Medical SOAP Note Generation from Doctor-Patient Conversation Audio
+KEYWORDS=large language model; medical note generation
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> 
+We contribute to the field by having developed an end-to-end AI application
+for instantaneous (<40 seconds) generation of high quality medical notes. It
+requires minimum intervention from the physician's side. It records the
+appointment audio, transcribes and diarizes it, generates the medical note
+using a fine-tuned LLM, and displays it to the physician. Our app shows a
+potential to save massive amounts of time, boost productivity, and prevent
+burnouts. 
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-006-notemd" src="imgs/sp25-006.png"
+    style="margin: 0px 0px 0px 160px; width: 640px; height: 360px">
+<p>
+Writing medical notes is an extremely time-consuming process for physicians,
+often equating to the amount of time spent attending to patients. It is one of
+the significant factors contributing to physician burnouts. Often physicians
+do not think that it contributes to their decision making process, but they
+regard it as a documentation chore. Despite being a significant problem it has
+not received much attention from AI researchers. Only a handful of studies
+have explored it to date. 
+<p>
+We contribute to the field by having developed an end-to-end AI application
+for instantaneous (<40 seconds) generation of high quality medical notes. It
+requires minimum intervention from the physician's side. It records the
+appointment audio, transcribes and diarizes it, generates the medical note
+using a fine-tuned LLM, and displays it to the physician. Our app shows a
+potential to save massive amounts of time, boost productivity, and prevent
+burnouts. 
+<p>
+We thoroughly compared our fine-tuned LLM to pre-trained proprietary LLMs,
+e.g. GPT-4, Claude Opus, and open-source LLMs, e.g. Mixtral 8x7B. Mistral
+8x22B. Our LLM outperforms the other best performing LLM by about 5% on
+rouge-1, rouge-2, rouge-L, rouge-Lsum, BERTscore, and BLEURT. We then
+conducted a Human Evaluation study with doctors, nurses, and medical students
+as participants. Most of them showed an interest in trying out our app in
+their practice and liked the easy-to-use and simple UI.
+DESC_MORE_DETAILS_END

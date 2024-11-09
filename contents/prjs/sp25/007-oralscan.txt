@@ -1,0 +1,54 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=007
+TITLE=OralScan: Mobile App to detect Oral Diseases
+KEYWORDS=oral disease detection
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> 
+Our AI-driven mobile app leverages smartphone cameras to capture intraoral
+images, enabling AI-powered detection of common oral health issues like
+cavities, gingivitis, and ulcers. OralScan provides instant diagnostic
+feedback, with tailored self-care recommendations or alerts for professional
+care based on severity, bridging healthcare gaps and promoting preventive care
+for vulnerable populations.
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-007-oralscan" src="imgs/sp25-007.png"
+    style="margin: 0px 0px 0px 160px; width: 640px">
+<p>
+OralScan addresses critical oral health disparities faced by individuals with
+mobility, cognitive, and sensory disabilities, particularly in marginalized
+communities. These populations often encounter significant barriers to care,
+such as financial constraints, limited transportation, and a lack of knowledge
+about preventive care. Systemic inequities further hinder access to consistent
+oral healthcare in underserved areas.
+<p>
+Our AI-driven mobile app leverages smartphone cameras to capture intraoral
+images, enabling AI-powered detection of common oral health issues like
+cavities, gingivitis, and ulcers. OralScan provides instant diagnostic
+feedback, with tailored self-care recommendations or alerts for professional
+care based on severity, bridging healthcare gaps and promoting preventive care
+for vulnerable populations.
+<p>
+Designed by a team experienced in AI, mobile health, and community engagement,
+OralScan has potential to integrate seamlessly with Electronic Health Records
+(EHR), allowing remote healthcare monitoring and reducing the need for
+in-person visits. Features like voice commands, visual cues, and intuitive
+navigation make the app accessible for users with various disabilities.
+<p>
+With its low-cost, automated, and user-friendly approach, OralScan empowers
+individuals to proactively manage their oral health, ultimately reducing
+healthcare disparities and providing equitable access to essential oral care
+services for disabled and underserved communities.
+DESC_MORE_DETAILS_END

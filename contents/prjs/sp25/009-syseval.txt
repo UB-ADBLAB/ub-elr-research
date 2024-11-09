@@ -1,0 +1,59 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=009
+TITLE=Evaluation-as-a-Service Framework for Comprehensive and Reproducible System Evaluation
+KEYWORDS=benchmarking; reproduciblity; storage and database systems; visualization
+MENTORS=<a href="https://sites.google.com/view/haonanlu/home" target="_blank">Prof. Haonan Lu</a> and <br> <a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> In this project, we would like to design an Evaluation-as-a-Service (EaaS)
+framework for comprehensive and reproducible evaluation of a variety of
+classic and well-known systems. Towards that, we have developed such a
+framework that can be easily integrated with a variety of production and
+experimental distributed non-transactional and transactional key-value stores
+to perform automated evaluation in single or cross data center settings and
+produce fair and comprehensive reports of the systems under test. The
+immediate goal of Spring 2025 is to test more systems in key-value store
+categories and integrate more standard benchmarks to further validate the
+generality and low-overhead of the framework, and explore additional system
+categories such as DBMS under various data models (e.g., relational, graph,
+document, etc.).
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+For the first semester, the students are expected to understand the evaluation
+process of systems research, be able to re-create the evaluation experiments
+of one simple system prototype, and reproduce its evaluation results. To
+understand the process of systems evaluation, the students will read multiple
+research papers while focusing on their evaluation sections and read articles
+on a variety of issues (open questions) related to systems evaluation. To
+re-create simple experiments (and reproduce their results), the students will
+receive training on using cloud testbeds such as CloudLab and ChameleonCloud
+and gain experience in designing, setting up, and running systems experiments
+on real, physical machines on these testbeds.
+<p>
+The long-term goal of this project is to re-create evaluation experiments of a
+variety of classic and well-known systems using the general automated
+evaluation framework we will be designing (a project on which I advise two
+PhDs and a MS student). This project is to improve the fairness and
+completeness of systems evaluation which is a critical component of systems
+research, making it easier to cross compare systems work and improving
+reproducibility and replicability. Proposals that improve reproducibility and
+replicability of systems research are a rising trend in the systems community.
+This framework can also be used as part of the course projects for CSE486/586
+Distributed Systems, allowing students to better understand different systems
+designs and gain handson experience with systems implementations. The part of
+the work assigned to the EL/R project is suitable in terms of the scope and
+feasibility. The undergrads can possibly (if they want) receive help/guidance
+from the Ph.D. and MS students in the evaluation framework project, and
+participate in designing the framework if they are interested and when they
+are ready.
+DESC_MORE_DETAILS_END

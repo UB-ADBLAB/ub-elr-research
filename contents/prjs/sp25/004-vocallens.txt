@@ -1,0 +1,54 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=004
+TITLE=VocalLens: A Web-based, AI-driven mHealth Tool for Multilevel Language Assessment and Specific Language Impairment Screening
+KEYWORDS=speech recognition; impairment screening
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> 
+Our project seeks to address these challenges by developing VocalLens, an
+innovative, web-based, AI-driven mHealth tool for early Specific Language
+Impairment (SLI) screening. The ultimate goal of this SBIR project is to
+create an accurate, cost- effective, and accessible SLI screening solution
+that reduces the burden on families and healthcare systems, while improving
+language outcomes and the overall quality of life for children with SLI.
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-004-vocallens" src="imgs/sp25-004.png"
+    style="margin: 0px 0px 0px 160px; width: 640px; height: 360px">
+<p>
+In the United States, Specific Language Impairment (SLI) is a prevalent
+neurodevelopmental disorder affecting approximately 2 million children,
+leading to significant long-term challenges in language acquisition, social
+interactions, and academic achievement. Current methods for diagnosing SLI are
+resource-intensive, costly, and often inaccessible, particularly for families
+in rural and low-income areas. Our project seeks to address these challenges
+by developing VocalLens, an innovative, web-based, AI-driven mHealth tool for
+early SLI screening. VocalLens leverages advanced AI and Automatic Speech
+Recognition (ASR) technologies to analyze children's speech across multiple
+linguistic levels—phoneme, syllable, word, and pause patterns—providing richer
+linguistic assessments and automated, cost-effective self-assessment in
+naturalistic settings such as homes and schools. By capturing and providing
+detailed objective biomarkers, VocalLens significantly enhances the accuracy
+and efficiency of SLI diagnosis. Designed with a user-friendly interface,
+VocalLens includes clear instructions, demos, and detailed explanations,
+making it accessible to parents and teachers without requiring extensive
+domain knowledge. The system will be refined through iterative usability
+testing with stakeholders to ensure it remains intuitive, user-friendly, and
+meets the diverse needs of its users. Additionally, ecological usability tests
+will further optimize the system’s interface, enhancing its accessibility and
+ease of use. The ultimate goal of this SBIR project is to create an accurate,
+cost- effective, and accessible SLI screening solution that reduces the burden
+on families and healthcare systems, while improving language outcomes and the
+overall quality of life for children with SLI.
+DESC_MORE_DETAILS_END
