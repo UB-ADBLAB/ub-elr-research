@@ -1,0 +1,63 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+# They are currently text descriptions of the project, and standard HTML elements
+# or nested Bootstrap 4.0 features are allowed.
+#
+# See below for example.
+
+ID=002
+TITLE=Wireless Freehand 3D Ultrasound for Self-Directed Breast Tumor Detection and Monitoring
+KEYWORDS=wireless; tumor detection and monitoring; deep learning
+MENTORS=<a href="https://cse.buffalo.edu/~wenyaoxu" target="_blank">Prof. Wenyao Xu</a>
+
+DESC_START # A one or two sentence description of the project + logistics information
+<p> In this project we propose a framework of hardware and
+deep-learning based post-processing that can be used to augment any
+commercially available wireless ultrasound transducer allowing users
+to visualize a scanned volume in 3D by inferring probe pose from the
+acquired images and an inertial measurement unit (IMU) using optical
+flow and sensor fusion, and to detect suspicious regions and estimate
+the likelihood of malignancy. The radiation-free nature of ultrasound,
+invariance to breast density, painless administration and ease of
+visualization and interpretation, coupled with low cost and broad
+compatibility enables women to scan themselves significantly more
+often than they can undergo mammograms, without the need for medical
+training, thereby improving the likelihood of early detection.
+DESC_END
+DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+<p>
+    <img alt="sp25-002-wireless-tumor-detection" src="imgs/sp25-002.png"
+    style="margin: 0px 0px 0px 160px; width: 640px; height: 360px">
+<p>
+The American Cancer Society estimates over 300,000 new cases of
+invasive breast cancer in 2024 and over 40,000 deaths from the
+disease. While women over the age of 40 are recommended to undergo
+mammography every two years to detect breast tumors early, mammograms
+expose patients to ionizing radiation, require painful compression of
+the breast to administer the scan and image quality is inversely
+proportional to breast density. Ultrasound offers a low-cost,
+painless, radiation free alternative but presents challenges owing to
+the cross-sectional nature of acquisition and the relatively lower
+resolution. This limitation of visualization necessitates radiological
+training to detect suspicious masses which then must be identified by
+invasive biopsies. Furthermore, to visualize a scanned volume in 3D
+using 2D cross-sections, the conventional approach involves motorized,
+digitally controlled translation stages such that probe pose is known
+and can be used to populate cross sections in 3D space corresponding
+to where they are acquired from. In this project we propose a
+framework of hardware and deep-learning based post-processing that can
+be used to augment any commercially available wireless ultrasound
+transducer allowing users to visualize a scanned volume in 3D by
+inferring probe pose from the acquired images and an inertial
+measurement unit (IMU) using optical flow and sensor fusion, and to
+detect suspicious regions and estimate the likelihood of malignancy.
+The radiation-free nature of ultrasound, invariance to breast density,
+painless administration and ease of visualization and interpretation,
+coupled with low cost and broad compatibility enables women to scan
+themselves significantly more often than they can undergo mammograms,
+without the need for medical training, thereby improving the
+likelihood of early detection.
+DESC_MORE_DETAILS_END

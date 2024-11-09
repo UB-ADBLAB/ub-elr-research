@@ -11,7 +11,7 @@ REGULAR_SUBST='
 '
 
 for i in pages/*.html; do
-    echo $i
+    echo "Processing page $i"
     BASENAME="`basename "$i"`"
     
     sed "$REGULAR_SUBST" "pages/$BASENAME" > out/"$BASENAME"
@@ -29,9 +29,11 @@ for i in contents/prjs/*; do
         *)
             SEMESTER="$S"
     esac
+    echo "Processing semester $SEMESTER ($S)"
     rm -f "out.tmp/${S}_prjids.txt"
     rm -f "out.tmp/${S}_prj_list.txt"
     for j in contents/prjs/$S/*; do
+        echo "Processing project $j"
         ID="$(grep '^ID=' $j | head -n 1 | sed 's/^ID=\([0-9]*\).*$/\1/')"
         TITLE="$(grep '^TITLE=' $j | head -n 1 | sed 's/^TITLE=[ \t]*//' | sed 's/\//\\\//g')"
         KEYWORDS="$(grep '^KEYWORDS=' $j | head -n 1 | sed 's/^KEYWORDS=[ \t]*//' | sed 's/\//\\\//g')"
@@ -82,4 +84,7 @@ for i in contents/prjs/*; do
         templates/prj.html > out/prj_${S}.html
 done
 
+echo "Copying images..."
+mkdir -p out/imgs
+cp contents/imgs/* out/imgs
 
