@@ -11,7 +11,7 @@
 ID=009
 TITLE=Evaluation-as-a-Service Framework for Comprehensive and Reproducible System Evaluation
 KEYWORDS=benchmarking; reproduciblity; storage and database systems; visualization
-MENTORS=<a href="https://sites.google.com/view/haonanlu/home" target="_blank">Prof. Haonan Lu</a> and <br> <a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
+MENTORS=<a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
 
 DESC_START # A one or two sentence description of the project + logistics information
 <p> In this project, we would like to design an Evaluation-as-a-Service (EaaS)
