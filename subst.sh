@@ -97,3 +97,7 @@ echo "Copying images..."
 mkdir -p out/imgs
 cp contents/imgs/* out/imgs
 
+echo "Copying files..."
+mkdir -p out/files
+cp contents/files/* out/files
+
