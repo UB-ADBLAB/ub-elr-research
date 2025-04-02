@@ -9,11 +9,18 @@
 # See below for example.
 
 ID=001
+
 TITLE=Transaction Scheduling via User Interrupts for HTAP Database Systems
+
 KEYWORDS=user interrupts; x86-64; hybrid tranasctional/analytical processing; database
+
 MENTORS=<a href="https://cse.buffalo.edu/~zzhao35" target="_blank">Prof. Zhuoyue Zhao</a>
 
-DESC_START # A one or two sentence description of the project + logistics information
+# Current team size/maximum capacity
+CAPACITY=0/3
+
+# A one or two sentence description of the project + logistics information
+DESC_START
 <p> In this project, we would like to design and build intelligent transaction
 scheduling subsystems for database systems in Hybrid Transactional/Analytical
 Processing use cases, leveraging a new hardware feature, user interrupts in
@@ -22,7 +29,9 @@ device driver for enabling user interrupt features for userspace programs, and
 demonstrate its usability and performance through integration in our existing
 research prototype system.
 DESC_END
-DESC_MORE_DETAILS_START # A longer description that can be collapsed/expanded
+
+# A longer description that can be collapsed/expanded
+DESC_MORE_DETAILS_START
 <p>
 The user interrupt feature introduced in x86-64 ISA in 2021 allows
 inter-process communications without having to trap into kernels as in
