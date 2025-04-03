@@ -21,7 +21,7 @@ TITLE=Some-title
 KEYWORDS=keyword1; keyword2; keyword3 ...
 
 # Must fit in one line
-MENTORS=(link to your personal website)[Prof. X]
+MENTORS=[Prof. X](link to your personal website)
 
 # Current team size/maximum capacity; must fit in one line
 CAPACITY=0/3
