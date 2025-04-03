@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ x`hostname` != x'timberlake.cse.buffalo.edu' ]; then
+if [ x`hostname` != x'cerf' ]; then
     exit 0
 fi
 
