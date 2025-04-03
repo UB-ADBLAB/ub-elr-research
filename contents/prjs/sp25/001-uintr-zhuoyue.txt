@@ -21,7 +21,7 @@ CAPACITY=0/3
 
 # A one or two sentence description of the project + logistics information
 DESC_START
-<p> In this project, we would like to design and build intelligent transaction
+In this project, we would like to design and build intelligent transaction
 scheduling subsystems for database systems in Hybrid Transactional/Analytical
 Processing use cases, leveraging a new hardware feature, user interrupts in
 x86-64 ISA. The immediate goal of this semester is to design a character
@@ -32,7 +32,6 @@ DESC_END
 
 # A longer description that can be collapsed/expanded
 DESC_MORE_DETAILS_START
-<p>
 The user interrupt feature introduced in x86-64 ISA in 2021 allows
 inter-process communications without having to trap into kernels as in
 traditional IPC methods such as signal or eventfd. This reduces the latency of
@@ -46,9 +45,8 @@ additional uses of the feature that were not possible with the specialized
 kernel. If it is successful, we will incorporate this new device driver into
 the codebase of our prototype research DBMS to validate its performance and
 enhance our next research publication submission.
-<p>
-For more details, please refer to <a href="https://lwn.net/Articles/869140/"
-target="_blank">this LWN article</a> and <a
-href="https://github.com/intel/uintr-linux-kernel"
-target="_blank">uintr-intel-kernel</a> repository.
+
+For more details, please refer to [this LWN
+article](https://lwn.net/Articles/869140/) and
+[uintr-intel-kernel](https://github.com/intel/uintr-linux-kernel) repository.
 DESC_MORE_DETAILS_END

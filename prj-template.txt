@@ -1,0 +1,51 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+#
+#
+# For all values, you may use the John Gruber's markdown syntax
+# (https://daringfireball.net/projects/markdown/syntax), standard HTML syntax # and/or nested
+# Bootstrap 4.0 features for short and long descriptions.
+#
+# See below for example.
+
+# Please use the next available ID.
+ID=001
+
+# Must fit in one line
+TITLE=Some-title
+
+# Must fit in one line
+KEYWORDS=keyword1; keyword2; keyword3 ...
+
+# Must fit in one line
+MENTORS=(link to your personal website)[Prof. X]
+
+# Current team size/maximum capacity; must fit in one line
+CAPACITY=0/3
+
+# Short description of the project that never gets collapsed.
+DESC_START
+In this project, we would like to do xxx. The immediate goal of this semester
+is yyy. A mix of HTML and Markdown syntax is also ok here.
+DESC_END
+
+# A longer description that can be collapsed/expanded
+DESC_MORE_DETAILS_START
+Detailed paragraph 1: a quick brown fox jumps over a lazy dog.
+
+A mix of HTML and markdown syntax accepted, e.g., list:
+
+- hyperlinks: [CSE website](https://cse.buffalo.edu)
+- images: ![UB Logo](https://engineering.buffalo.edu/v-15e12df763043e7420a5159d6359e3f9/etc.clientlibs/wci/components/block/header/clientlibs/resources/ub-logo-blue-horizontal-group.svg)
+
+ordered list:
+
+1. blah
+2. blah blah
+3. blah blah blah
+
+
+DESC_MORE_DETAILS_END

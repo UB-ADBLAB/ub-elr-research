@@ -19,6 +19,8 @@ done
 
 mkdir -p out.tmp
 
+MARKDOWN="markdown_py -x markdown3_newtab"
+
 for i in contents/prjs/*; do
     S="`basename $i`"
     case "$S" in
@@ -57,8 +59,8 @@ for i in contents/prjs/*; do
                 }
             ' $j)"
              
-            echo "$DESC" > "out.tmp/${S}_${ID}_desc.txt"
-            echo "$DETAILS" > "out.tmp/${S}_${ID}_details.txt"
+            echo "$DESC" | $MARKDOWN > "out.tmp/${S}_${ID}_desc.txt"
+            echo "$DETAILS" | $MARKDOWN > "out.tmp/${S}_${ID}_details.txt"
             
             cd out.tmp
             sed -e "s/<!-- @PRJ_ID@ -->/$ID/" \
