@@ -40,9 +40,9 @@ for i in contents/prjs/*; do
             echo "Processing project $j"
             ID="$(grep '^ID=' $j | head -n 1 | sed 's/^ID=\([0-9]*\).*$/\1/')"
             TITLE="$(grep '^TITLE=' $j | head -n 1 | sed 's/^TITLE=[ \t]*//' | sed 's/\//\\\//g')"
-            KEYWORDS="$(grep '^KEYWORDS=' $j | head -n 1 | sed 's/^KEYWORDS=[ \t]*//' | sed 's/\//\\\//g')"
-            MENTORS="$(grep '^MENTORS=' $j | head -n 1 | sed 's/^MENTORS=[ \t]*//' | sed 's/\//\\\//g')"
-            CAPACITY="$(grep '^CAPACITY=' $j | head -n 1 | sed 's/^CAPACITY=[ \t]*//' | sed 's/\//\\\//g' )"
+            KEYWORDS="$(grep '^KEYWORDS=' $j | head -n 1 | sed 's/^KEYWORDS=[ \t]*//' | $MARKDOWN | sed 's/^<p>//' | sed 's/<\/p>$//' | sed 's/\//\\\//g')"
+            MENTORS="$(grep '^MENTORS=' $j | head -n 1 | sed 's/^MENTORS=[ \t]*//' | $MARKDOWN | sed 's/^<p>//' | sed 's/<\/p>$//' | sed 's/\//\\\//g')"
+            CAPACITY="$(grep '^CAPACITY=' $j | head -n 1 | sed 's/^CAPACITY=[ \t]*//' | $MARKDOWN | sed 's/^<p>//' | sed 's/<\/p>$//' | sed 's/\//\\\//g')"
             echo "$ID" >> out.tmp/${S}_prjids.txt
             echo "$ID - $TITLE (mentored by $MENTORS)" | sed 's/\\//g' | sed 's/<[^<>]*>//g' >> out.tmp/${S}_prj_list.txt
             
