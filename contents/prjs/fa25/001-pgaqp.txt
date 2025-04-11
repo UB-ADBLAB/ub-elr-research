@@ -1,0 +1,58 @@
+# It is ok to add any comments in this file, but do not change any the cap-lettered keywords.
+#
+# The keys with the equal sign after it must have its value on the same line.
+#
+# The paired keys with _START and _END should have contents between those two lines.
+#
+#
+# For all values, you may use the John Gruber's markdown syntax
+# (https://daringfireball.net/projects/markdown/syntax), standard HTML syntax # and/or nested
+# Bootstrap 4.0 features for short and long descriptions.
+#
+# See below for example.
+
+# Please use the next available ID.
+ID=001
+
+# Must fit in one line
+TITLE=PgAQP: a pluggable toolkit for approximate query processing in PostgreSQL
+
+# Must fit in one line
+KEYWORDS=database systems; PostgreSQL; C language; approximate algorithms; data structure
+
+# Must fit in one line
+MENTORS=[Prof. Zhuoyue Zhao](https://cse.buffalo.edu/~zzhao35)
+
+# Current team size/maximum capacity; must fit in one line
+CAPACITY=0/3
+
+# Short description of the project that never gets collapsed.
+DESC_START
+Approximate Query Processing (**AQP**) can speed up SQL queries with a
+trade-off in accuracy in relational database systems such as
+[PostgreSQL](https://www.postgresql.org). This is often useful for interactive
+data exploration and/or real-time data analysis workloads in real-world data
+intensive applications. This project aims to design
+a toolkit for providing AQP functionalities in PostgreSQL as a
+pluggable extension,
+[pgAQP](). In this
+project, you will work closely with other graduate students and gain
+hands-on experience with designing, prototyping and implementing new
+features or performance tuning for large codebases.
+DESC_END
+
+# A longer description that can be collapsed/expanded
+DESC_MORE_DETAILS_START
+
+For more details, please refer to our [VLDB 23
+demo](https://dl.acm.org/doi/pdf/10.14778/3611540.3611602) and the video
+below.
+
+<div class="row">
+<iframe
+src="https://buffalo.app.box.com/embed/s/vm2b5somzfppi2v2xsth1ily5s50598z?sortColumn=date"
+width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen
+msallowfullscreen style="margin: 0 auto; display: block;"></iframe>
+</div>
+DESC_MORE_DETAILS_END
+
